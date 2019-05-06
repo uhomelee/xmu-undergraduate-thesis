@@ -1,0 +1,418 @@
+\begin{thebibliography}{62}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\href}[2]{\url{#2}}
+\providecommand{\doi}[1]{DOI: \href{http://dx.doi.org/#1}{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+
+\bibitem[Reinhart\ et~al.(2011)Reinhart and Steil]{reinhart2011neural}
+REINHART R~F, STEIL J~J.
+\newblock Neural learning and dynamical selection of redundant solutions for
+  inverse kinematic control\allowbreak[C]//\allowbreak{}Ieee-Ras International
+  Conference on Humanoid Robots.
+\newblock [S.l.: s.n.], 2011: 564--569.
+
+\bibitem[Grochow\ et~al.(2004)Grochow, Martin, Hertzmann, and
+  Popovic]{grochow2004Style}
+GROCHOW K, MARTIN S, HERTZMANN A, et~al.
+\newblock Style-based inverse kinematics\allowbreak[J].
+\newblock Siggraph Acm Siggraph Papers, 2004, 23\penalty0 (3): 522--531.
+
+\bibitem[Tournier\ et~al.(2009)Tournier, Wu, Courty, Arnaud, and
+  Reveret]{tournier2009motion}
+TOURNIER M, WU X, COURTY N, et~al.
+\newblock Motion compression using principal geodesics
+  analysis\allowbreak[C]//\allowbreak{}Computer Graphics Forum: volume~28.
+\newblock [S.l.]: Wiley Online Library, 2009: 355--364.
+
+\bibitem[Huang\ et~al.(2017)Huang, Wang, Fratarcangeli, Yan, and
+  Pelachaud]{huang2017multi}
+HUANG J, WANG Q, FRATARCANGELI M, et~al.
+\newblock Multi-variate gaussian-based inverse
+  kinematics\allowbreak[C]//\allowbreak{}Computer Graphics Forum: volume~36.
+\newblock [S.l.]: Wiley Online Library, 2017: 418--428.
+
+\bibitem[Köker\ et~al.(2004)Köker, Öz, Çakar, and Ekiz]{koker2004study}
+KöKER R, ÖZ C, ÇAKAR T, et~al.
+\newblock A study of neural network based inverse kinematics solution for a
+  three-joint robot\allowbreak[J].
+\newblock Robotics and Autonomous Systems, 2004, 49\penalty0 (3): 227--234.
+
+\bibitem[Daya\ et~al.(2010)Daya, Khawandi, and Akoum]{daya2010applying}
+DAYA B, KHAWANDI S, AKOUM M.
+\newblock Applying neural network architecture for inverse kinematics problem
+  in robotics\allowbreak[J].
+\newblock Journal of Software Engineering and Applications, 2010, 3\penalty0
+  (03): 230.
+
+\bibitem[Feng\ et~al.(2012)Feng, Yao-nan, and Yi-min]{feng2012inverse}
+FENG Y, YAO-NAN W, YI-MIN Y.
+\newblock Inverse kinematics solution for robot manipulator based on neural
+  network under joint subspace\allowbreak[J].
+\newblock International Journal of Computers Communications and Control, 2012,
+  7\penalty0 (3): 459--472.
+
+\bibitem[Levine\ et~al.(2014)Levine and Koltun]{levine2014learning}
+LEVINE S, KOLTUN V.
+\newblock Learning complex neural network policies with trajectory
+  optimization\allowbreak[C]//\allowbreak{}International Conference on Machine
+  Learning.
+\newblock [S.l.: s.n.], 2014: 829--837.
+
+\bibitem[Holden\ et~al.(2016)Holden, Saito, and Komura]{holden2016deep}
+HOLDEN D, SAITO J, KOMURA T.
+\newblock A deep learning framework for character motion synthesis and
+  editing\allowbreak[J].
+\newblock ACM Transactions on Graphics (TOG), 2016, 35\penalty0 (4): 138.
+
+\bibitem[Holden\ et~al.(2017)Holden, Komura, and Saito]{holden2017phase}
+HOLDEN D, KOMURA T, SAITO J.
+\newblock Phase-functioned neural networks for character control\allowbreak[J].
+\newblock ACM Transactions on Graphics (TOG), 2017, 36\penalty0 (4): 42.
+
+\bibitem[Pietak\ et~al.(2013)Pietak, Ma, Beck, and
+  Stringer]{pietak2013fundamental}
+PIETAK A, MA S, BECK C~W, et~al.
+\newblock Fundamental ratios and logarithmic periodicity in human limb
+  bones\allowbreak[J].
+\newblock Journal of anatomy, 2013, 222\penalty0 (5): 526--537.
+
+\bibitem[Choset\ et~al.(2005)Choset, Lynch, Hutchinson, Kantor, Burgard,
+  Kavraki, and Thrun]{Robot2005Motion}
+CHOSET H, LYNCH K, HUTCHINSON S, et~al.
+\newblock Principles of robot motion: Theory, algorithms, and
+  implementation\allowbreak[Z].
+\newblock [S.l.: s.n.], 2005.
+
+\bibitem[Brogan\ et~al.(1998)Brogan, Metoyer, and Hodgins]{brogan1998dynamic}
+BROGAN D, METOYER R, HODGINS J.
+\newblock Dynamically simulated characters in virtual
+  environments\allowbreak[Z].
+\newblock [S.l.: s.n.], 1998.
+
+\bibitem[Courty\ et~al.(2008)Courty and Arnaud]{courty2008inverse}
+COURTY N, ARNAUD E.
+\newblock Inverse kinematics using sequential monte carlo
+  methods\allowbreak[C]//\allowbreak{}International Conference on Articulated
+  Motion and Deformable Objects.
+\newblock [S.l.]: Springer, 2008: 1--10.
+
+\bibitem[Hecker\ et~al.(2008)Hecker, Raabe, Enslow, DeWeese, Maynard, and van
+  Prooijen]{hecker2008real}
+HECKER C, RAABE B, ENSLOW R~W, et~al.
+\newblock Real-time motion retargeting to highly varied user-created
+  morphologies\allowbreak[C]//\allowbreak{}ACM Transactions on Graphics (TOG):
+  volume~27.
+\newblock [S.l.]: ACM, 2008: 27.
+
+\bibitem[Aristidou\ et~al.(2018)Aristidou, Lasenby, Chrysanthou, and
+  Shamir]{aristidou2018inverse}
+ARISTIDOU A, LASENBY J, CHRYSANTHOU Y, et~al.
+\newblock Inverse kinematics techniques in computer graphics: A
+  survey\allowbreak[C]//\allowbreak{}Computer Graphics Forum: volume~37.
+\newblock [S.l.]: Wiley Online Library, 2018: 35--58.
+
+\bibitem[LEE(1984)]{LEE1984Geomatric}
+LEE C.
+\newblock Dynamically simulated characters in virtual
+  environments\allowbreak[Z].
+\newblock [S.l.: s.n.], 1984.
+
+\bibitem[Tolani\ et~al.()Tolani, Goswami, and I]{deepak}
+TOLANI D, GOSWAMI A, I N.
+\newblock Badler real-time inverse kinematics techniques for anthropomorphic
+  limbs\allowbreak[Z].
+\newblock [S.l.: s.n.].
+
+\bibitem[Buss(2004)]{buss2004introduction}
+BUSS S~R.
+\newblock Introduction to inverse kinematics with jacobian transpose,
+  pseudoinverse and damped least squares methods\allowbreak[J].
+\newblock IEEE Journal of Robotics and Automation, 2004, 17\penalty0 (1-19):
+  16.
+
+\bibitem[Unzueta\ et~al.(2008)Unzueta, Peinado, Boulic, and
+  Suescun]{unzueta2008full}
+UNZUETA L, PEINADO M, BOULIC R, et~al.
+\newblock Full-body performance animation with sequential inverse
+  kinematics\allowbreak[J].
+\newblock Graphical models, 2008, 70\penalty0 (5): 87--104.
+
+\bibitem[Mukherjee\ et~al.(2015)Mukherjee, Paramkusam, and
+  Dwivedy]{mukherjee2015inverse}
+MUKHERJEE S, PARAMKUSAM D, DWIVEDY S~K.
+\newblock Inverse kinematics of a nao humanoid robot using kinect to track and
+  imitate human motion\allowbreak[C]//\allowbreak{}Robotics, Automation,
+  Control and Embedded Systems (RACE), 2015 International Conference on.
+\newblock [S.l.]: IEEE, 2015: 1--7.
+
+\bibitem[Harish\ et~al.(2016)Harish, Mahmudi, Callennec, and
+  Boulic]{harish2016parallel}
+HARISH P, MAHMUDI M, CALLENNEC B~L, et~al.
+\newblock Parallel inverse kinematics for multithreaded
+  architectures\allowbreak[J].
+\newblock ACM Transactions on Graphics (TOG), 2016, 35\penalty0 (2): 19.
+
+\bibitem[Colom{\'e}\ et~al.(2012)Colom{\'e} and Torras]{colome2012redundant}
+COLOM{\'E} A, TORRAS C.
+\newblock Redundant inverse kinematics: Experimental comparative review and two
+  enhancements\allowbreak[C]//\allowbreak{}Intelligent Robots and Systems
+  (IROS), 2012 IEEE/RSJ International Conference on.
+\newblock [S.l.]: IEEE, 2012: 5333--5340.
+
+\bibitem[Zhao\ et~al.(1994)Zhao and Badler]{zhao1994inverse}
+ZHAO J, BADLER N~I.
+\newblock Inverse kinematics positioning using nonlinear programming for highly
+  articulated figures\allowbreak[J].
+\newblock ACM Transactions on Graphics (TOG), 1994, 13\penalty0 (4): 313--336.
+
+\bibitem[Rose\ et~al.(1996)Rose, Guenter, Bodenheimer, and
+  Cohen]{rose1996efficient}
+ROSE C, GUENTER B, BODENHEIMER B, et~al.
+\newblock Efficient generation of motion transitions using spacetime
+  constraints\allowbreak[C]//\allowbreak{}Proceedings of the 23rd annual
+  conference on Computer graphics and interactive techniques.
+\newblock [S.l.]: ACM, 1996: 147--154.
+
+\bibitem[Kenwright(2012)]{kenwright2012inverse}
+KENWRIGHT B.
+\newblock Inverse kinematics--cyclic coordinate descent (ccd)\allowbreak[J].
+\newblock Journal of Graphics Tools, 2012, 16\penalty0 (4): 177--217.
+
+\bibitem[Aristidou\ et~al.(2011)Aristidou and Lasenby]{aristidou2011fabrik}
+ARISTIDOU A, LASENBY J.
+\newblock Fabrik: A fast, iterative solver for the inverse kinematics
+  problem\allowbreak[J].
+\newblock Graphical Models, 2011, 73\penalty0 (5): 243--260.
+
+\bibitem[Rolf\ et~al.(2010)Rolf, Steil, and Gienger]{rolf2010goal}
+ROLF M, STEIL J~J, GIENGER M.
+\newblock Goal babbling permits direct learning of inverse
+  kinematics\allowbreak[J].
+\newblock IEEE Transactions on Autonomous Mental Development, 2010, 2\penalty0
+  (3): 216--229.
+
+\bibitem[Rose~III\ et~al.(2001)Rose~III, Sloan, and Cohen]{rose2001artist}
+ROSE~III C~F, SLOAN P~P~J, COHEN M~F.
+\newblock Artist-directed inverse-kinematics using radial basis function
+  interpolation\allowbreak[C]//\allowbreak{}Computer Graphics Forum: volume~20.
+\newblock [S.l.]: Wiley Online Library, 2001: 239--250.
+
+\bibitem[Chai\ et~al.(2005)Chai and Hodgins]{chai2005performance}
+CHAI J, HODGINS J~K.
+\newblock Performance animation from low-dimensional control
+  signals\allowbreak[C]//\allowbreak{}ACM Transactions on Graphics (ToG):
+  volume~24.
+\newblock [S.l.]: ACM, 2005: 686--696.
+
+\bibitem[Carvalho\ et~al.(2007)Carvalho, Boulic, and
+  Thalmann]{carvalho2007interactive}
+CARVALHO S~R, BOULIC R, THALMANN D.
+\newblock Interactive low-dimensional human motion synthesis by combining
+  motion models and pik\allowbreak[J].
+\newblock Computer Animation and Virtual Worlds, 2007, 18\penalty0 (4-5):
+  493--503.
+
+\bibitem[Raunhardt\ et~al.(2009)Raunhardt and Boulic]{raunhardt2009motion}
+RAUNHARDT D, BOULIC R.
+\newblock Motion constraint\allowbreak[J].
+\newblock The Visual Computer, 2009, 25\penalty0 (5-7): 509.
+
+\bibitem[Petru Maior” University~of Tg.~Mureş()]{petru}
+PETRU MAIOR” UNIVERSITY~OF TG.~MUREş T~~R, No. 1 N.Iorga~St.
+\newblock Neural network based inverse kinematics solution for trajectory
+  tracking of a robotic arm\allowbreak[Z].
+\newblock [S.l.: s.n.].
+
+\bibitem[Reinhart\ et~al.()Reinhart and Steil]{rene}
+REINHART R~F, STEIL J~J.
+\newblock Neural learning and dynamical selection of redundant solutions for
+  inverse kinematic control\allowbreak[Z].
+\newblock [S.l.: s.n.].
+
+\bibitem[Lukosevicius\ et~al.(2009)Lukosevicius and Jaeger]{luko2009reservoir}
+LUKOSEVICIUS M, JAEGER H.
+\newblock Reservoir computing approaches to recurrent neural network
+  training\allowbreak[J].
+\newblock Computer Science Review, 2009.
+
+\bibitem[Huang\ et~al.()Huang, Zhu, and Siew]{huang}
+HUANG G~B, ZHU Q~Y, SIEW C~K.
+\newblock Extreme learning machine: a new learning scheme of feed forward
+  neural networks\allowbreak[J].
+\newblock IEEE Intern. Joint Conf. on Neural Networks.
+
+\bibitem[SIDENBLADH\ et~al.(2002)SIDENBLADH, BLACK, and SIGAL]{siden}
+SIDENBLADH H, BLACK M~J, SIGAL L.
+\newblock Implicit probabilistic models of human motion for synthesis and
+  tracking\allowbreak[J].
+\newblock Proc. ECCV, LNCS 2353, vol. 1, 784–800, 2002.
+
+\bibitem[Csiszar\ et~al.(2017)Csiszar, Eilers, and Verl]{csiszar2017solving}
+CSISZAR A, EILERS J, VERL A.
+\newblock On solving the inverse kinematics problem using neural
+  networks\allowbreak[C]//\allowbreak{}Mechatronics and Machine Vision in
+  Practice (M2VIP), 2017 24th International Conference on.
+\newblock [S.l.]: IEEE, 2017: 1--6.
+
+\bibitem[{Wikipedia
+  contributors}(2019{\natexlab{a}})]{wiki:Artificial_neural_network}
+{Wikipedia contributors}.
+\newblock Artificial neural network --- {Wikipedia}{,} the free
+  encyclopedia\allowbreak[EB/OL].
+\newblock 2019.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Artificial_neural_network&oldid=893208691}.
+
+\bibitem[{Wikipedia contributors}(2019{\natexlab{b}})]{wiki:Deep_learning}
+{Wikipedia contributors}.
+\newblock Deep learning --- {Wikipedia}{,} the free
+  encyclopedia\allowbreak[EB/OL].
+\newblock 2019.
+\newblock
+  \url{https://en.wikipedia.org/w/index.php?title=Deep_learning&oldid=894592567}.
+
+\bibitem[维基百科(2019{\natexlab{a}})]{wiki:RNN}
+维基百科.
+\newblock 递归神经网络 --- 维基百科{,}
+  自由的百科全书\allowbreak[EB/OL].
+\newblock 2019.
+\newblock
+  \url{https://zh.wikipedia.org/w/index.php?title=%E9%80%92%E5%BD%92%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C&oldid=53141336}.
+
+\bibitem[维基百科(2019{\natexlab{b}})]{wiki:LSTM}
+维基百科.
+\newblock 長短期記憶 --- 维基百科{,}
+  自由的百科全书\allowbreak[EB/OL].
+\newblock 2019.
+\newblock
+  \url{https://zh.wikipedia.org/w/index.php?title=%E9%95%B7%E7%9F%AD%E6%9C%9F%E8%A8%98%E6%86%B6&oldid=53142858}.
+
+\bibitem[Kanazawa\ et~al.(2018)Kanazawa, Black, Jacobs, and
+  Malik]{kanazawa2018end}
+KANAZAWA A, BLACK M~J, JACOBS D~W, et~al.
+\newblock End-to-end recovery of human shape and
+  pose\allowbreak[C]//\allowbreak{}Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition.
+\newblock [S.l.: s.n.], 2018: 7122--7131.
+
+\bibitem[Choi\ et~al.(1992)Choi and Lawrence]{choi1992inverse}
+CHOI B~B, LAWRENCE C.
+\newblock Inverse kinematics problem in robotics using neural
+  networks\allowbreak[J].
+\newblock Nasa Sti/recon Technical Report N, 1992, 93.
+
+\bibitem[Duka(2014)]{duka2014neural}
+DUKA A~V.
+\newblock Neural network based inverse kinematics solution for trajectory
+  tracking of a robotic arm\allowbreak[J].
+\newblock Procedia Technology, 2014, 12\penalty0 (1): 20--27.
+
+\bibitem[Bayo\ et~al.()Bayo, Papadopoulos, and Stubbe]{EduardoInverse}
+BAYO E, PAPADOPOULOS P, STUBBE J.
+\newblock Inverse dynamics and kinematics of multilink elastic robots: An
+  iterative frequency domain approach\allowbreak[Z].
+\newblock [S.l.: s.n.].
+
+\bibitem[Lin\ et~al.(2011)Lin, Lin, Liu, Lin, Wu, and Tung]{lin2011algebraic}
+LIN M~T, LIN H~B, LIU C~C, et~al.
+\newblock Algebraic-elimination based solution of inverse kinematics for a
+  humanoid robot finger\allowbreak[J].
+\newblock International Conference on Mechatronics and Automation, 2011.
+
+\bibitem[WITKIN\ et~al.(1995)WITKIN and POPOVIC´]{witkin}
+WITKIN A, POPOVIC´ Z.
+\newblock Motion warping\allowbreak[J].
+\newblock Proceedings of SIGGRAPH 95 (Aug.), 1995.
+
+\bibitem[ROSE(1998)]{rose}
+ROSE C~M~F~B~B, C.
+\newblock Verbs and adverbs: Multidimensional motion
+  interpolation\allowbreak[J].
+\newblock IEEE Computer Graphics Applications 18, 5, 32–40., 1998.
+
+\bibitem[Reinhart\ et~al.(2010)Reinhart and Steil]{reinhart2010reaching}
+REINHART R~F, STEIL J~J.
+\newblock Reaching movement generation with a recurrent neural network based on
+  learning inverse kinematics for the humanoid robot
+  icub\allowbreak[C]//\allowbreak{}Ieee-Ras International Conference on
+  Humanoid Robots, 2009. Humanoids.
+\newblock [S.l.: s.n.], 2010: 323--330.
+
+\bibitem[Neumann\ et~al.(2010)Neumann, Rolf, Steil, and
+  Gienger]{neumann2010learning}
+NEUMANN K, ROLF M, STEIL J~J, et~al.
+\newblock Learning inverse kinematics for pose-constraint bi-manual
+  movements\allowbreak[Z].
+\newblock [S.l.: s.n.], 2010.
+
+\bibitem[Waegeman\ et~al.(2011)Waegeman and Schrauwen]{waegeman2011towards}
+WAEGEMAN T, SCHRAUWEN B.
+\newblock Towards learning inverse kinematics with a neural network based
+  tracking controller\allowbreak[C]//\allowbreak{}Neural Information Processing
+  - International Conference, ICONIP 2011, Shanghai, China, November 13-17,
+  2011, Proceedings.
+\newblock [S.l.: s.n.], 2011: 441--448.
+
+\bibitem[Erleben\ et~al.(2019)Erleben and Andrews]{erleben2019solving}
+ERLEBEN K, ANDREWS S.
+\newblock Solving inverse kinematics using exact hessian
+  matrices\allowbreak[J].
+\newblock Computers \& Graphics, 2019, 78: 1--11.
+
+\bibitem[Wu\ et~al.(2011)Wu, Tournier, and Reveret]{wu2011natural}
+WU X, TOURNIER M, REVERET L.
+\newblock Natural character posing from a large motion database\allowbreak[J].
+\newblock IEEE computer graphics and applications, 2011, 31\penalty0 (3):
+  69--77.
+
+\bibitem[Ho\ et~al.(2013)Ho, Shum, Cheung, and Yuen]{ho2013topology}
+HO E~S, SHUM H~P, CHEUNG Y~M, et~al.
+\newblock Topology aware data-driven inverse
+  kinematics\allowbreak[C]//\allowbreak{}Computer Graphics Forum: volume~32.
+\newblock [S.l.]: Wiley Online Library, 2013: 61--70.
+
+\bibitem[Shum\ et~al.(2013)Shum, Ho, Jiang, and Takagi]{shum2013real}
+SHUM H~P, HO E~S, JIANG Y, et~al.
+\newblock Real-time posture reconstruction for microsoft kinect.\allowbreak[J].
+\newblock IEEE Trans. Cybernetics, 2013, 43\penalty0 (5): 1357--1369.
+
+\bibitem[Lv\ et~al.(2016)Lv, Xu, Yang, Li, and Zhou]{lv2016data}
+LV P, XU M, YANG B, et~al.
+\newblock Data-driven humanlike reaching behaviors synthesis\allowbreak[J].
+\newblock Neurocomputing, 2016, 177: 26--32.
+
+\bibitem[Caserman\ et~al.(2018)Caserman, Garcia-Agundez, Konrad, G{\"o}bel, and
+  Steinmetz]{caserman2018real}
+CASERMAN P, GARCIA-AGUNDEZ A, KONRAD R, et~al.
+\newblock Real-time body tracking in virtual reality using a vive
+  tracker\allowbreak[J].
+\newblock Virtual Reality, 2018: 1--14.
+
+\bibitem[Chai\ et~al.(2007)Chai and Hodgins]{chai2007constraint}
+CHAI J, HODGINS J~K.
+\newblock Constraint-based motion optimization using a statistical dynamic
+  model\allowbreak[J].
+\newblock ACM Transactions on Graphics (TOG), 2007, 26\penalty0 (3): 8.
+
+\bibitem[Raghavan\ et~al.(1993)Raghavan and Roth]{raghavan1993inverse}
+RAGHAVAN M, ROTH B.
+\newblock Inverse kinematics of the general 6r manipulator and related
+  linkages\allowbreak[J].
+\newblock Journal of Mechanical Design, 1993, 115\penalty0 (3): 502--508.
+
+\bibitem[Manocha\ et~al.(1994)Manocha and Canny]{manocha1994efficient}
+MANOCHA D, CANNY J~F.
+\newblock Efficient inverse kinematics for general 6r
+  manipulators\allowbreak[J].
+\newblock IEEE transactions on robotics and automation, 1994, 10\penalty0 (5):
+  648--657.
+
+\bibitem[Gan\ et~al.(2005)Gan, Oyama, Rosales, and Hu]{gan2005complete}
+GAN J~Q, OYAMA E, ROSALES E~M, et~al.
+\newblock A complete analytical solution to the inverse kinematics of the
+  pioneer 2 robotic arm\allowbreak[J].
+\newblock Robotica, 2005, 23\penalty0 (1): 123--129.
+
+\end{thebibliography}

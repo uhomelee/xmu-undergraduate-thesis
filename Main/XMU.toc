@@ -1,0 +1,52 @@
+\contentsline {chapter}{\numberline {第一章}\hspace {-2.5em}绪论 \unhbox \voidb@x \cleaders \hbox to.68em{\hss .\hss }\hfill \kern \z@ }{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}引言}{1}{section.1.1}
+\contentsline {chapter}{\numberline {第二章}\hspace {-2.5em}相关工作 \unhbox \voidb@x \cleaders \hbox to.68em{\hss .\hss }\hfill \kern \z@ }{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}逆向运动学解决方案}{3}{section.2.1}
+\contentsline {paragraph}{解析方法}{3}{paragraph*.1}
+\contentsline {paragraph}{数值方法}{3}{paragraph*.2}
+\contentsline {paragraph}{数据驱动方法}{4}{paragraph*.3}
+\contentsline {paragraph}{深度神经网络}{4}{paragraph*.4}
+\contentsline {section}{\numberline {2.2}人工神经网络与深度学习}{5}{section.2.2}
+\contentsline {paragraph}{人工神经网络}{5}{paragraph*.5}
+\contentsline {paragraph}{人工神经网络组成}{6}{paragraph*.6}
+\contentsline {paragraph}{神经网络学习}{6}{paragraph*.7}
+\contentsline {paragraph}{反向传播}{7}{paragraph*.8}
+\contentsline {paragraph}{学习模式的分类}{8}{paragraph*.9}
+\contentsline {paragraph}{深度学习}{8}{paragraph*.10}
+\contentsline {paragraph}{深度学习框架}{9}{paragraph*.12}
+\contentsline {paragraph}{递归神经网络}{9}{paragraph*.13}
+\contentsline {paragraph}{长短期记忆}{10}{paragraph*.14}
+\contentsline {chapter}{\numberline {第三章}\hspace {-2.5em}方法 \unhbox \voidb@x \cleaders \hbox to.68em{\hss .\hss }\hfill \kern \z@ }{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}离线网络学习}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}数据集和预处理}{13}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}IK解算器关键组件}{14}{subsection.3.1.2}
+\contentsline {paragraph}{$\mathbf {MP}$网络结构}{14}{paragraph*.17}
+\contentsline {paragraph}{$\mathbf {MP}$损失函数}{15}{paragraph*.18}
+\contentsline {paragraph}{$\mathbf {PE}$网络结构}{15}{paragraph*.20}
+\contentsline {paragraph}{$\mathbf {PE}$损失函数}{16}{paragraph*.21}
+\contentsline {paragraph}{激活函数、优化器和超参数}{16}{paragraph*.22}
+\contentsline {paragraph}{网络参数调节}{17}{paragraph*.23}
+\contentsline {subsection}{\numberline {3.1.3}去噪滤波器}{17}{subsection.3.1.3}
+\contentsline {paragraph}{平滑度}{18}{paragraph*.24}
+\contentsline {paragraph}{自然度}{18}{paragraph*.25}
+\contentsline {section}{\numberline {3.2}姿势合成和姿势估计}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}姿势合成}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}姿态估计}{19}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {第四章}\hspace {-2.5em}实验结果和讨论 \unhbox \voidb@x \cleaders \hbox to.68em{\hss .\hss }\hfill \kern \z@ }{22}{chapter.4}
+\contentsline {section}{\numberline {4.1}实验细节}{22}{section.4.1}
+\contentsline {section}{\numberline {4.2}实验结果}{22}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}训练集和测试集结果}{22}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}去噪滤波器结果}{24}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}姿态估计结果}{24}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}讨论}{26}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}不同网络结构的比较}{26}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}不同帧数输入的比较}{26}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}左臂和右臂的比较}{28}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}手臂和腿的比较}{28}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}重定位动作至不同肢体长度角色}{28}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}应用}{30}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}关键帧轨迹}{30}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}实时动作压缩}{30}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}频繁交互环境中的运动合成}{31}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {第五章}\hspace {-2.5em}总结 \unhbox \voidb@x \cleaders \hbox to.68em{\hss .\hss }\hfill \kern \z@ }{32}{chapter.5}
+\contentsline {chapter}{参考文献 \unhbox \voidb@x \cleaders \hbox to.68em{\hss .\hss }\hfill \kern \z@ }{33}{chapter.5}

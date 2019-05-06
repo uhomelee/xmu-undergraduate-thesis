@@ -1,0 +1,15 @@
+% !TeX root = ../Main/XMU.tex
+\chapter*{摘要}
+在机器人控制和角色动画领域，逆向运动学（IK）是一个久远的问题。该问题主要的难点在于冗余性，也就是不同但可数范围内的身体形态可能都指向同一个骨骼末梢执行器的位置。从全部的代数解中选择最合适的正确解是一个悬而未决的问题。因为人们对人体运动的熟悉度以及对细微细节的高度敏感，所以对人体形态角色是否具有自然姿势的识别尤其具有挑战性。本文用迄今为止最大的人类mocap数据库训练的深度学习神经网络来解决逆运动学问题，定义了输入和输出的运动帧之间的临界时间相关性，并对不同参数下神经网络训练表现进行了系统的对比。鉴于逆向运动学问题中多解决方案的问题，神经网络训练后模型会选择与真实表演者的人体姿态最一致的姿势作为输出，其中的一致性通过与基准数据库进行比较来验证。根据网络实际的表现，提出去噪滤波器对预测结果进一步改善。训练后的神经网络模型可以适用于诸如篮球运球动作或者芭蕾舞的复杂的任务，以及不同几何长度的角色。本文对肢体长度不做精确的长度计算，并且不需要关节做手动的设置，这消除了个体之间的差异性并允许本文的方法直接用于姿势估计的问题。
+
+\keywords{深度学习；最大的mocap数据库；时间相关性；复杂任务；几何长度；姿态估计}
+
+\clearpage
+
+\chapter*{Abstract}
+
+Inverse Kinematics (IK) is a long standing problem in the ﬁelds of robotics control and character animation. The main challenge lies in the redundancy, where an inﬁnite number of body conﬁgurations may reach the same position of end-effector. Selecting the appropriate one from the large repertoire of candidates is an open question. It is particularly challenging to identify the natural posture for humanoid characters since we are most familiar with human motion and highly sensitive to subtle details. This paper addresses the problem of Inverse Kinematics with deep neural network, trained with so-far the largest human mocap database. We identify the critical temporal correlation between input and output motion frames and compare systematically the performance of nerual network training with different parameters. Given the challenge of multi-solution in the IK problem, the trained model selects the pose which is most consistent with the pose by the real performer. This consistency is validated by the comparison with the benchmark database. A denoising filter is proposed to further improve the prediction results based on the actual performance of the network. The trained model is adaptable to complex tasks, such as basketball dribbling and ballet dancing, and to characters of different geometrical lengths. We do not assume the knowledge of the accurate limb lengths and skip the requirement of manual setup of joint limits. This  eliminates differences between individuals and allows our method to be directly used in the problems of posture estimation.
+
+\englishkeywords{deep learning;largest mocap dataset;temporal relation;complex tasks;geometrical lengths;posture estimation}
+
+\cleardoublepage

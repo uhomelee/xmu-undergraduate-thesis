@@ -1,0 +1,108 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: XMU.aux
+The style file: gbt7714-unsrt.bst
+Database file #1: ../Body/Reference.bib
+Repeated entry---line 173 of file ../Body/Reference.bib
+ : @inproceedings{lin2011algebraic
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 286 of file ../Body/Reference.bib
+ : @inproceedings{waegeman2011towards
+ :                                   ,
+I'm skipping whatever remains of this entry
+Unbalanced braces---line 572 of file ../Body/Reference.bib
+ :   note = "[Online; accessed 1002
+ :                                 }2019]"
+I'm skipping whatever remains of this entry
+Unbalanced braces---line 579 of file ../Body/Reference.bib
+ :   note = "[Online; accessed 1002
+ :                                 }2019]"
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--empty year in deepak
+Too many commas in name 1 of "Petru Maior” University of Tg. Mureş, No. 1 N.Iorga St., Tg.Mureş, 540088, Romania." for entry petru
+while executing---line 1543 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "Petru Maior” University of Tg. Mureş, No. 1 N.Iorga St., Tg.Mureş, 540088, Romania." for entry petru
+while executing---line 1543 of file gbt7714-unsrt.bst
+Warning--empty year in petru
+Warning--empty year in rene
+Warning--empty year in huang
+Warning--empty year in EduardoInverse
+Name 1 in "WITKIN, A., AND POPOVIC´, Z" has a comma at the end for entry witkin
+while executing---line 1543 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "ROSE, C., COHEN, M. F.and BODENHEIMER, B" for entry rose
+while executing---line 1543 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "ROSE, C., COHEN, M. F.and BODENHEIMER, B" for entry rose
+while executing---line 1543 of file gbt7714-unsrt.bst
+Warning--empty year in deepak
+Warning--empty year in deepak
+Too many commas in name 1 of "Petru Maior” University of Tg. Mureş, No. 1 N.Iorga St., Tg.Mureş, 540088, Romania." for entry petru
+while executing---line 1625 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "Petru Maior” University of Tg. Mureş, No. 1 N.Iorga St., Tg.Mureş, 540088, Romania." for entry petru
+while executing---line 1625 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "Petru Maior” University of Tg. Mureş, No. 1 N.Iorga St., Tg.Mureş, 540088, Romania." for entry petru
+while executing---line 1625 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "Petru Maior” University of Tg. Mureş, No. 1 N.Iorga St., Tg.Mureş, 540088, Romania." for entry petru
+while executing---line 1625 of file gbt7714-unsrt.bst
+Warning--empty year in petru
+Warning--empty year in petru
+Warning--empty year in rene
+Warning--empty year in rene
+Warning--empty year in huang
+Warning--empty year in EduardoInverse
+Warning--empty year in EduardoInverse
+Name 1 in "WITKIN, A., AND POPOVIC´, Z" has a comma at the end for entry witkin
+while executing---line 1625 of file gbt7714-unsrt.bst
+Name 1 in "WITKIN, A., AND POPOVIC´, Z" has a comma at the end for entry witkin
+while executing---line 1625 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "ROSE, C., COHEN, M. F.and BODENHEIMER, B" for entry rose
+while executing---line 1625 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "ROSE, C., COHEN, M. F.and BODENHEIMER, B" for entry rose
+while executing---line 1625 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "ROSE, C., COHEN, M. F.and BODENHEIMER, B" for entry rose
+while executing---line 1625 of file gbt7714-unsrt.bst
+Too many commas in name 1 of "ROSE, C., COHEN, M. F.and BODENHEIMER, B" for entry rose
+while executing---line 1625 of file gbt7714-unsrt.bst
+You've used 62 entries,
+            3424 wiz_defined-function locations,
+            1109 strings with 16631 characters,
+and the built_in function-call counts, 431658 in all, are:
+= -- 44778
+> -- 44795
+< -- 44577
++ -- 14268
+- -- 437
+* -- 2123
+:= -- 46574
+add.period$ -- 190
+call.type$ -- 62
+change.case$ -- 270
+chr.to.int$ -- 13059
+cite$ -- 76
+duplicate$ -- 1291
+empty$ -- 3800
+format.name$ -- 941
+if$ -- 125092
+int.to.chr$ -- 3
+int.to.str$ -- 63
+missing$ -- 0
+newline$ -- 323
+num.names$ -- 186
+pop$ -- 18872
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 52412
+stack$ -- 0
+substring$ -- 14409
+swap$ -- 178
+text.length$ -- 542
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 607
+warning$ -- 14
+while$ -- 731
+width$ -- 0
+write$ -- 922
+(There were 19 error messages)
