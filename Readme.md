@@ -1,18 +1,19 @@
-![](https://img.shields.io/badge/Language-TeX-red.svg) ![](https://img.shields.io/github/stars/CamuseCao/XMU-Undergraduate-thesis-template.svg?style=social) ![](https://img.shields.io/github/release/CamuseCao/XMU-Undergraduate-thesis-template.svg?label=version)  ![](https://img.shields.io/github/last-commit/CamuseCao/XMU-Undergraduate-thesis-template.svg?style=social&logo=Tinder) ![](https://img.shields.io/github/repo-size/CamuseCao/XMU-Undergraduate-thesis-template.svg) ![](https://img.shields.io/github/languages/code-size/CamuseCao/XMU-Undergraduate-thesis-template.svg) ![](https://img.shields.io/github/followers/CamuseCao.svg?label=Followers) ![](https://img.shields.io/github/downloads/CamuseCao/XMU-Undergraduate-thesis-template/v0.11/total.svg?style=plastic) 
+# **Deep Inverse Kinematics Solver and Its Applications**-Undergraduate Thesis of XMU
+
+- Author: Li Youhong, Software Engineering, College of Software
+- Adviser: Dr.Guo Shihui， Associate Professor
+- Contact: [liyouhong@stu.xmu.edu.cn](mailto:liyouhong@stu.xmu.edu.cn)
+
+## Key Words
+mocap dataset;
+## Abstract
+
+Inverse Kinematics (IK) is a long standing problem in the ﬁelds of robotics control and character animation. The main challenge lies in the redundancy, where an inﬁnite number of body conﬁgurations may reach the same position of end-effector. Selecting the appropriate one from the large repertoire of candidates is an open question. It is particularly challenging to identify the natural posture for humanoid characters since we are most familiar with human motion and highly sensitive to subtle details. This paper addresses the problem of Inverse Kinematics with deep neural network, trained with so-far the largest human mocap database. We identify the critical temporal correlation between input and output motion frames and compare systematically the performance of nerual network training with different parameters. Given the challenge of multi-solution in the IK problem, the trained model selects the pose which is most consistent with the pose by the real performer. This consistency is validated by the comparison with the benchmark database. A denoising filter is proposed to further improve the prediction results based on the actual performance of the network. The trained model is adaptable to complex tasks, such as basketball dribbling and ballet dancing, and to characters of different geometrical lengths. We do not assume the knowledge of the accurate limb lengths and skip the requirement of manual setup of joint limits. This  eliminates differences between individuals and allows our method to be directly used in the problems of posture estimation.
 
 
 
-![]()
 
-
-# 厦门大学模板使用说明
-
-[TOC]
-
-
-## 使用的前提
-
-为了使用该模板，需要安装一个`TeX`的发行版本。可以选择`Texlive`或者`Miktex`,他们都是跨平台的。而`Texlive`打包了比较多的宏包，较为庞大，`Miktex`则是临时下载没有的宏包。这里我推荐使用`Miktex`。但是对于Mac，推荐使用`MacTeX`，它是为Mac定制的发行版本，应该比较合适。特别提醒`CTeX`套装无法运行该模板。你可以选择卸载`CTeX`套装，安装我推荐的发行版本，或者不使用该模板。关于编译方式需选择`XeLaTeX`,否则无法正常编译该模板,如果熟悉`latexmk`的可以用它来编译，这更好。
+<!-- 为了使用该模板，需要安装一个`TeX`的发行版本。可以选择`Texlive`或者`Miktex`,他们都是跨平台的。而`Texlive`打包了比较多的宏包，较为庞大，`Miktex`则是临时下载没有的宏包。这里我推荐使用`Miktex`。但是对于Mac，推荐使用`MacTeX`，它是为Mac定制的发行版本，应该比较合适。特别提醒`CTeX`套装无法运行该模板。你可以选择卸载`CTeX`套装，安装我推荐的发行版本，或者不使用该模板。关于编译方式需选择`XeLaTeX`,否则无法正常编译该模板,如果熟悉`latexmk`的可以用它来编译，这更好。
 
 如果你不想在本地安装`TeX`的发行版本，其实可以使用 [Overleaf](https://www.overleaf.com) 在线编译平台，同样请使用`XeLaTeX`编译。如果想在线编译请选择我的另外一个项目去编译。我会在最后附上地址。能在Overleaf编译多亏了他们支持人员 LianTze Lim 的帮助，在此表示感谢。 大家如果在这个平台上使用遇到什么技术问题可以发邮件向[支持人员](mailto:support@overleaf.com)请教，很可能回复的是林前辈哦，请大家不要发邮件问怎么样才能访问该网站。~~关于打开该网址的正确姿势是找到一个靠谱的梯子，然后爬上去。~~
 
@@ -44,6 +45,6 @@
 
 该项目github项目的地址是 : [Link](https://github.com/CamuseCao/XMU-Undergraduate-thesis-template)
 
-`Overleaf`在线编译的项目的地址 ：[Github下载](https://github.com/CamuseCao/XMU-Thesis-Overleaf)    [Overleaf查看与下载](https://www.overleaf.com/2128697983jhmpkzxdzmry) 
+`Overleaf`在线编译的项目的地址 ：[Github下载](https://github.com/CamuseCao/XMU-Thesis-Overleaf)    [Overleaf查看与下载](https://www.overleaf.com/2128697983jhmpkzxdzmry)
 
-(`Overleaf`项目的地址请勿随意编辑，方便大家的观看。你可以把它拷到你自己的项目下尽情玩耍。 )
+(`Overleaf`项目的地址请勿随意编辑，方便大家的观看。你可以把它拷到你自己的项目下尽情玩耍。 ) -->
