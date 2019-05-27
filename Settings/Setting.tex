@@ -150,7 +150,7 @@ citecolor=blue,urlcolor=green]{hyperref}
 	\addcontentsline{toc}{chapter}%
 	{\protect\numberline{\@chaplable{\thechapter}}\hspace{-2.5em}#1 \Dotfill }%
 	\addcontentsline{eoc}{chapter}%
-	{\protect\numberline{\chaptername\ \thechapter }\hspace{-1.8em}#3 \Dotfill }%
+	{\protect\numberline{\chaptername \thechapter }\hspace{-1.8em}#3 \Dotfill }%
 	\else
 	\addcontentsline{toc}{chapter}{#1}%
 	\addcontentsline{eoc}{chapter}{#3}%
@@ -208,7 +208,7 @@ citecolor=blue,urlcolor=green]{hyperref}
 	\begingroup
 	\parindent \z@ \rightskip \@pnumwidth
 	\parfillskip -\@pnumwidth
-	\leavevmode \sffamily\sihao
+	\leavevmode \sffamily\sihao \bfseries
 	\advance\leftskip\@tempdima
 	\hskip -\leftskip
 	#1\nobreak\hfil \nobreak\hb@xt@\@pnumwidth{\hss\rmfamily #2}\par
@@ -218,7 +218,7 @@ citecolor=blue,urlcolor=green]{hyperref}
 }
 \renewcommand*\l@section[2]{\@dottedtocline{1}{1.5em}{3.0em}%
 	{\sffamily
-		 \xiaosi #1}{#2}}
+		 \xiaosi \bfseries #1}{#2}}
 \renewcommand*\l@subsection[2]{\@dottedtocline{2}{3.8em}{3.0em}%
 	{\rmfamily  %\sffamily
 		\xiaosi #1}{#2}}
@@ -234,7 +234,7 @@ citecolor=blue,urlcolor=green]{hyperref}
 	{%
 		\parindent \z@ \raggedright
 		\interlinepenalty\@M
-		\sffamily
+		\sffamily \bfseries
 		\sihao \thesection \hspace{1em}#1\par\nobreak%
 	}%
 	\vspace{2.3ex \@plus 0.2ex}
@@ -250,7 +250,7 @@ citecolor=blue,urlcolor=green]{hyperref}
 	{%
 		\parindent \z@ \raggedright
 		\interlinepenalty\@M
-		\sffamily \bfseries
+		\sffamily\bfseries
 		\xiaosi \thesubsection \hspace{1em}#1\par\nobreak%
 	}%
 	\vspace{1.5ex \@plus 0.2ex}
@@ -317,8 +317,10 @@ citecolor=blue,urlcolor=green]{hyperref}
 	\parskip 0pt
 	%    \Cchapter{\texorpdfstring{\contentsname}{目录}}%
 	\begin{center}
-          \textbf{\sffamily \xiaosan 目录}
+          \textbf{\sffamily \xiaosan {目 \quad 录} }
 	\end{center}
+	\titlecontents{section}[4em]
+  \titlecontents{subsection}[4em]
 	\@starttoc{toc}%
 	\if@openright
 \cleardoublepage
@@ -330,6 +332,8 @@ citecolor=blue,urlcolor=green]{hyperref}
 	\begin{center}
 		\xiaosan{ \textbf{Table of Contents}}
 	\end{center}
+	\titlecontents{section}[4em]
+  \titlecontents{subsection}[4em]
 	\@starttoc{eoc}%
 	\endgroup
 	\if@restonecol\twocolumn\fi%

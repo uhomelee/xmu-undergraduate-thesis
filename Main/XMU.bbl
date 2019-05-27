@@ -71,13 +71,6 @@ HOLDEN D, KOMURA T, SAITO J.
 \newblock Phase-functioned neural networks for character control\allowbreak[J].
 \newblock ACM Transactions on Graphics (TOG), 2017, 36\penalty0 (4): 42.
 
-\bibitem[Pietak\ et~al.(2013)Pietak, Ma, Beck, and
-  Stringer]{pietak2013fundamental}
-PIETAK A, MA S, BECK C~W, et~al.
-\newblock Fundamental ratios and logarithmic periodicity in human limb
-  bones\allowbreak[J].
-\newblock Journal of anatomy, 2013, 222\penalty0 (5): 526--537.
-
 \bibitem[Choset\ et~al.(2005)Choset, Lynch, Hutchinson, Kantor, Burgard,
   Kavraki, and Thrun]{Robot2005Motion}
 CHOSET H, LYNCH K, HUTCHINSON S, et~al.
@@ -255,6 +248,13 @@ CSISZAR A, EILERS J, VERL A.
   networks\allowbreak[C]//\allowbreak{}Mechatronics and Machine Vision in
   Practice (M2VIP), 2017 24th International Conference on.
 \newblock [S.l.]: IEEE, 2017: 1--6.
+
+\bibitem[Pietak\ et~al.(2013)Pietak, Ma, Beck, and
+  Stringer]{pietak2013fundamental}
+PIETAK A, MA S, BECK C~W, et~al.
+\newblock Fundamental ratios and logarithmic periodicity in human limb
+  bones\allowbreak[J].
+\newblock Journal of anatomy, 2013, 222\penalty0 (5): 526--537.
 
 \bibitem[{Wikipedia
   contributors}(2019{\natexlab{a}})]{wiki:Artificial_neural_network}

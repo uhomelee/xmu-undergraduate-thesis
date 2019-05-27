@@ -1,6 +1,6 @@
 % !TeX root = ../Main/XMU.tex
-\chapter{实验结果和讨论}{Result and Discussions}
-\section{实验细节}{Implementation Details}
+\chapter{实验}{Experiments}
+\section{实验环境}{Implementation Environment}
 \label{sec:implementation}
 深度学习网络的训练环境和测试环境如下：
 \begin{itemize}
@@ -55,8 +55,7 @@
 \subsection{训练集和测试集结果}{Results on Training and Testing Dataset}
 神经网络的训练集和测试集输出结果全部通过MATLAB脚本替代原有的BVH文件的数据值，并通过BVH PLAYER进行播放。训练结果可以通过两方面来检测，一是BVH文件的播放后的视觉效果，二是观察训练过程中训练集和测试集的损失函数值。
 
-
-% \cref{fig:train_screenshot}展示了来自训练集的合成动作（包括篮球运球、投篮和芭蕾舞动作）。这些示例都需要角色对象进行精细的操作（例如对篮球的掌控）以及与环境频繁的交互（例如地面上的脚部支撑）。 这些动作的求解都需要ik解算器具备较高的精度。 一般来说，训练样本的最优的平均损失$<10^{-5}$，实际的预测的欧拉角和真实值的相差约在$\pm0.01^{\circe}$之间。
+\cref{fig:train_screenshot}展示了来自训练集的合成动作（包括篮球运球、投篮和芭蕾舞动作）。这些示例都需要角色对象进行精细的操作（例如对篮球的掌控）以及与环境频繁的交互（例如地面上的脚部支撑）。 这些动作的求解都需要ik解算器具备较高的精度。 一般来说，训练样本的最优的平均损失$<10^{-5}$，实际的预测的欧拉角和真实值的相差约在$\pm0.01^{\circe}$之间。
 
 \cref{fig:test_screenshot}展示了来自测试集中的合成动作（包括从地面起立、篮球运球和翻跟斗）。
 尽管这些例子中的动作并未包含在训练集中，但IK解算器仍可以解决该问题并产生符合自然姿态的动作。需要指出的是，测试集上的结果并未出现过拟合的情况，如\cref{fig:train_test}所示，训练集和测试集的损失函数值随着迭代次数的递增而下降，最终的结果测试样本的平均损失在$10^{-4}~10^{-5}$之间。通过实验，在全连接（FCN）模型中，虽然训练集上的网络性能表现良好，但在测试集上非常容易出现过拟合的情况。
@@ -95,7 +94,7 @@
 除此之外，本文的去噪滤波器在姿态估计中也不可忽视。\cref{fig:2dtobvh}中的姿态已经经过去噪滤波器降噪处理过。在动态的GIF中，原始的姿态估计结果的抖动非常明显，甚至root关节点的世界坐标都呈现出不规律的抖动；但在运用了本文的去噪滤波器方法后，整体的运动消除了抖动，呈现出平滑效果，符合人体运动规律。
 
 
-\section{讨论}{Discussion}
+\section{实验分析}{Analysis of Experiments}
 
 \subsection{不同网络结构的比较}{Comparison of Different Network Structures}
 图\ref{fig:comparison_structure}验证了本文的网络选择的有效性，将其与其他流行网络进行性能比较，包括卷积神经网络（CNN），全连接神经网络（FCN）和生成性对抗网络（GAN）。这些网络的实现代码和模型在公开Github上（请参阅本文~\ref{sec:implementation}中的链接）
@@ -170,7 +169,7 @@
 \caption{不同肢体长度角色的合成动作}
 \label{fig:limb_length}
 \end{figure}
-\section{应用}{Application}
+\section{具体应用}{Application}
 \subsection{关键帧轨迹}{Trajectory Key-framing}
 本文涉及工作的一个直接应用就是关键帧轨迹。用户将末端效应器的运动轨迹拟合为一条样条曲线，IK解算器可以自动生成沿着身体关节连接方向的各个关节角度，以获得四肢完整的关节运动轨迹。该任务首先应使用均匀参数对样条曲线进行采样，其次还需要将连续多帧合并为一段输入作为神经网络的输入。
 \subsection{实时动作压缩}{Real-time Motion Compression}
@@ -178,3 +177,13 @@
 
 \subsection{频繁交互环境中的运动合成}{Motion Synthesis in Contact-rich Environment}
 \cref{fig:train_screenshot}和\cref{fig:test_screenshot}均展示了在涉及频繁的肢体与环境接触的情景，本文所述的方法仍具有合成自然的动作的能力。
+\section{本章小结}{Summary}
+在本节中，对本文的实验过程做了完整的阐述。
+
+首先介绍了本文涉及方法的实际实验环境，为读者提供了实际训练时间的参考。
+
+其次，对训练集和测试集结果做了比较，证明了实验的准确性和可行性。同时对组件的性能、应用的结果作了描述，证明了实验的高度可行。
+
+接下来，对实验过程中对性能最佳的模型的取舍理由做了完整的比较，并附上了详细的对比图供读者查阅。
+
+最后，对本文提出的IK解算器的具体应用做了一些描述，并不完整，但希望可以给读者启发。

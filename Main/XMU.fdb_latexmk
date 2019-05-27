@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1557721056 "XMU.tex" "XMU.pdf" "XMU" 1557721124
-  "../Settings/Setting.tex" 1557716118 10007 94f065cb219b97a3677b0c78ca121f3c ""
+["pdflatex"] 1558945074 "XMU.tex" "XMU.pdf" "XMU" 1558945074
+  "../Settings/Setting.tex" 1558943775 10173 e0852b0a123002bd18ed9b6024cc8fea ""
   "/Library/Fonts/Songti.ttc" 1534542990 66933252 bc432ad7628283e59cc866a2cb6e3437 ""
-  "/dev/null" 1557721115 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/dev/null" 1558945069 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1480098689 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -155,8 +155,8 @@
   "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1552892650 4220280 e98f6ec45c998e5948f0cb6745ebbff7 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "XMU.aux" 1557720955 25829 e7af95fb27bb20b5c0f4fd4bce2a0616 ""
-  "XMU.tex" 1557714289 1484 268783e6da8bcb5789c1ceb0c809cf61 ""
+  "XMU.aux" 1558945059 28442 089615c70004a464fbf3377ad1ba062c ""
+  "XMU.tex" 1558945054 1489 19ae77717c373dea13e9f798a7112f65 ""
   (generated)
   "XMU.log"
   "XMU.pdf"

@@ -1,12 +1,26 @@
 % !TeX root = ../Main/XMU.tex
 \chapter{绪论}{Introduction}
 
-\section{引言}{Introduction}
+\section{研究背景及意义}{Research Background and Significance}
 \textbf{正向运动学（forward kinematics）}指的是在给定特定角色姿势的3D空间中计算末端效应器位置的过程。\textbf{逆向运动学（inverse kinematics）}指的是当已知末端执行器放置在所需目标位置时，计算沿身体骨骼连接的关节方向的过程。反向运动学（IK）意在解决人形骨骼自由度难题，即已知骨骼末端的位置姿态，计算骨骼对应位置的全部关节变量。从计算机视觉和人工智能发展历史来看，在控制人形机器人和角色动画领域，逆向运动学始终是一个难以逾越的待解决问题。在机器人控制中使用该技术时最常见的场景就是机器人手臂指定末端位置抓取的待解决任务，除此之外，通过约束其其手和脚的位置，可以做到可视地展示虚拟角色以与环境交互过程。
 
 然而，关于反向运动学的解决任务并不是一挥而就的。该问题最大的挑战在于空间冗余度\cite{reinhart2011neural}问题，即在末端执行器的位置相同的情况下，可能同时存在多个关于身体姿态的解。尽管所有的解在数值上都是正确的，但某些解对应的身体姿态看起来并不自然。这一问题严重影响了图像应用（如游戏和电影）中角色动画合成的自然性。在与真实人类交互的混合环境中的社交机器人方面，该问题也是日渐显著。
 
-我们通过使用深度学习神经网络对姿势分布建模来解决IK问题。神经网络的训练集包含超过200万个采集的真人的姿势数据和以此为依据计算得到的末端执行器位置和关节方向之间的映射。现有的数据驱动方法通过利用隐藏模型中嵌入的先验信息解决IK问题，包括高斯过程隐变量模型（Gaussian Process Latent Variable Model，GPLVM）\cite{grochow2004Style}，主成分分析（Principal Components Analysis，PCA）\cite{tournier2009motion}，多变量高斯分布模型（Multi-variate Gaussian distribution model，MGDMs）\cite{huang2017multi}。但是，这些模型都只能处理中等大小以下规模的数据\cite{koker2004study,daya2010applying,feng2012inverse}。尽管目前已经有一些使用深度神经网络进行角色控制的工作\cite{levine2014learning,holden2016deep,holden2017phase}，但我们并没有找到和我们工作一样的解决IK问题的应用开发。据我们所知，这项工作是首先使用相当大小的数据库训练IK问题解算器。更具体地说，本次毕业论文的贡献是：
+我们通过使用深度学习神经网络对姿势分布建模来解决IK问题。神经网络的训练集包含超过200万个采集的真人的姿势数据和以此为依据计算得到的末端执行器位置和关节方向之间的映射。现有的数据驱动方法通过利用隐藏模型中嵌入的先验信息解决IK问题，包括高斯过程隐变量模型（Gaussian Process Latent Variable Model，GPLVM）\cite{grochow2004Style}，主成分分析（Principal Components Analysis，PCA）\cite{tournier2009motion}，多变量高斯分布模型（Multi-variate Gaussian distribution model，MGDMs）\cite{huang2017multi}。但是，这些模型都只能处理中等大小以下规模的数据\cite{koker2004study,daya2010applying,feng2012inverse}。尽管目前已经有一些使用深度神经网络进行角色控制的工作\cite{levine2014learning,holden2016deep,holden2017phase}，但我们并没有找到和我们工作一样的解决IK问题的应用开发。据我们所知，这项工作是首先使用相当大小的数据库训练IK问题解算器。
+\section{逆向运动学解决方案}{Solutions to Inverse Kinematics}
+
+逆向运动学问题是一个长期且重要的问题。对该问题的解决是很多技术挑战的实践基础，例如在真实环境中控制人形机器人的末端执行器\cite{Robot2005Motion}和在虚拟环境中模拟动画角色动作\cite{brogan1998dynamic}。 然而，随着机器人或者虚拟角色的动作复杂性的增加，对逆向运动学的问题的解决变得越来越困难，并且计算成本也随之急剧增加。 本节简要概述了三类现有对于IK问题的解决技术。 为了得到一个对该问题更全面的了解和对一些元解决方案（Sequential Monte Carlo\cite{courty2008inverse}，基于粒子的逆向运动学求解器\cite{hecker2008real}）的理解。在计算机图形学中，最新的文章\cite{aristidou2018inverse}对关于逆向运动学问题的解决技术可做了总结，读者可以自行参考。
+
+\paragraph{解析方法}尝试着在给定链接长度、目标位置和潜在约束的情况下，通过求解三角函数来找到所有可能的解\cite{LEE1984Geomatric,deepak}。解析方法的求解速度很快，可以为一些并不复杂的情况提供准确的解，例如在只有有限数量自由度的2D平面图内。然而，当研究领域从2D拓展到3D时，解析方法就不再适用了。因为从理论上来说，在三维空间上对该问题求解，解的个数是无限的。在解决3D虚拟角色身体姿态的问题上，解析方法对该问题的局限性尤其明显。在机器人技术中，与求解的稳定性和准确性相比，合成运动的视觉感知的自然度应当被赋予更多的优先度，因为视觉自然度是图形应用中的关键问题，同时也是一项复杂艰巨的待解决任务。
+
+\paragraph{数值方法}通过迭代计算损失函数使之最小化来求解该问题。其中，损失函数通常表示为当前姿势和目标姿势之间的偏差。典型的技术包括Jacobian, Newton，启发式方法等方法。雅可比方法的基本形式是计算关节的全局位置与角度参数之间的偏导数\cite{buss2004introduction}。雅可比方法可以进一步细分。具体取决于雅可比行列式的形式，包括转置雅可比行列式\cite{unzueta2008full}，伪逆雅可比行列式\cite{mukherjee2015inverse}，最小二乘阻尼\cite{harish2016parallel}，奇异值分解\cite{colome2012redundant}等方法。基于牛顿法的方法通过使用拟合牛顿方法\cite{zhao1994inverse,rose1996efficient}的函数的二阶近似来找到解。启发式方法包括循环坐标下降法（CCD）\cite{kenwright2012inverse}和Forward and Backward Reaching IK（FABRIK）\cite{aristidou2011fabrik}。迭代并收敛到最优解的这一过程非常耗时，所以数值方法可能不适合需要实时响应的应用程序。虽然得到的最优解在数值上是正确的，但无法保证呈现出的姿势在视觉上是自然流畅的的，或者说与真人表演者保持一致。
+
+\paragraph{数据驱动方法}利用大型数据库并使用预先训练的模型来推断在已给定末端执行器位置情况下人体最有可能的姿势。数据库既可以从真实表演者 \cite{huang2017multi}捕获，也可以通过模拟生成（只适用于操作机器人）\cite{rolf2010goal}。研究人员使用径向基函数来修改原有样本中的运动和位置，并向IK控制控制器提供情感，困难等级，健康等描述性特征 \cite{rose2001artist}。多变量高斯分布模型（MGDM）被提出并用来精确地指定运动骨架的软关节约束和产生更高的精度和的稳定性\cite{huang2017multi}。 在一项工作中，IK问题被公式化为约束优化问题，并被用来解决使用主成分分析（PCA）或概率PCA（PPCA）\cite{chai2005performance, carvalho2007interactive, raunhardt2009motion, tournier2009motion}技术构建的潜在空间。针对不同类型的IK问题使用基于人体姿势的实时逆运动学系统的学习模型\cite{grochow2004Style}也令人印象深刻。该系统能够产生任何姿势，但更倾向于产生与训练数据中的姿势最相似的姿势。它可以应用于交互式角色构成，轨迹关键帧，具有缺失标记的实时动作捕捉，基于2D图像的姿态估计等。
+
+\paragraph{深度神经网络}的出现为IK问题的解决带来了一定的希望。神经网络可以用于构建从全局坐标到局部联合自由度的底层映射。例如，研究人员用前馈神经网络的应用来解决威勒平面机械手中蕴含的IK问题\cite{petru}。除此之外，另一项研究工作利用多层感知器（MLP）和反向传播训练算法的方法，证明了在机器人控制中使用逆几何模型（IGM）时能有效降低了计算复杂度\cite{daya2010applying}。然而，在先前的研究中，特别是在处理复杂的结构或大量的训练数据的时候，研究人员使用的基于梯度的学习算法可能导致非常缓慢的训练过程。为了解决这个问题，研究人员提出了一种称为极限学习机（ELM）的学习算法\cite{feng2012inverse}。该算法随机选择输入权重，再分析和确定单个隐藏层前馈神经网络的输出权重。在这一成果的基础上，研究人员提出了一种新型的递归神经网络控制器，用于对IK问题的神经网络学习过程进行控制和维护\cite{rene}。他们的工作采用了Reservoir Computing\cite{luko2009reservoir}和Extreme Learning Machines（ELMs）\cite{huang}的思想，在反向传播的过程中做了一些处理，进而降低了误差。另一项工作在深度神经网络的基础上，通过近似目标轨迹得到的实际例子来产生新的运动序列\cite{siden}。然而，这些方法都基于一定的高级约束，因此它们不能够产生新的姿势或满足新的约束。上述研究都建立在虚拟环境中机器人和真实环境中机器人的能够准确匹配的理想化假设下。最近提出了一种基于监督学习的方法来解决机器人制造和装配过程中错误\cite{csiszar2017solving}。具体方法是通过比较具有和不具有未对准关节的逆向运动学函数的误差，进而可以观察到对于神经网络，未对准的情况下不会对结果产生偏差。
+
+\section{主要研究内容}{Main Research Content}
+本次毕业论文的贡献是：
 \begin{itemize}
 \item 我们优先考虑符合人体自然姿态的运动，并且更倾向于由跟踪的真人示范的自然姿态。据我们所知，本次毕业论文是最先利用这样一个大型数据库来解决IK问题。现有的方法深度学习技术来解决IK问题（特别是机器人手臂运动的IK问题）
 \item 我们定义了输入动作帧和输出动作帧之间的临界时间相关性，并将短序动作序列作为网络输入来提高预测精度。除此之外，我们将一维的均值滤波器应用在输出关节通道以达到动作稳定的目的。
@@ -14,3 +28,35 @@
 \end{itemize}
 
 与传统的解析方案相比较，我们的方法能够避免预测出运动奇点和不可能的姿势。因为在传统方法中，病态矩阵的反演可能导致这些情况。 我们的解决方案做到了与解析方案相当的运行成本，并且比迭代求解器的表现更好。
+\section{论文组织结构}{Theis Organization}
+本文主要内容如上述，将根据其展开，文章的行文结构如下：
+\begin{itemize}
+  \item 第一章绪论中对逆向运动学概念进行解释，介绍了逆向运动学研究历史和过往解决方案，并介绍了本文的主要主要贡献。
+  \item 第二章对本文工作中用到的相关技术进行了详细的介绍，从基础的人工神经网络如何进行演算到本文采用的LSTM模型，为下文进行了铺垫。
+  \item 第三章详细地描述了本文的方法，如何进行逆向运动学问题的求解，包括网络模型和关键组件，并介绍了该解算器的具体应用。
+  \item 第四章介绍了实验的结果，并对不同网络超参数和输入模型进行了完整的比较。
+\end{itemize}
+%在你想要添加空白页的地方写上下面的三行代码:
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+\\ \hspace*{\fill} \\
+1

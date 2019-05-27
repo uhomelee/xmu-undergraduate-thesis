@@ -1,5 +1,5 @@
 % !TeX root = ../Main/XMU.tex
-\chapter{方法}{Methodology}
+\chapter{基于深度学习的逆向运动学解算器及其应用}{Deep Inverse Kinematics Solver and Its Applications}
 在本节中，将会完整阐述本文提出的基于监督学习方法的IK解算器。
 
 \cref{fig:flowchart}说明了我们方法的整体流程。 CMU的动作捕捉库中的BVH文件是训练集和测试集的来源。在MATLAB中，对BVH文件进行解析和整合后，提取出神经网络的训练集和测试集。训练集和测试集一共三组，分别对应$\mathbf{MP}$和$\mathbf{PE}$和去噪滤波器（具体定义见\ref{sec:components}），六个文件，总大小超过$10$GB。$\mathbf{MP}$和$\mathbf{PE}$训练后，通过预先训练好的去噪滤波器，进一步对预测的姿态进行修正，得到最终结果。具体应用$\mathbf{IK}$解算器时，输入的轨迹（向量序列）依次经过$\mathbf{MP}$和$\mathbf{PE}$和去噪滤波器，得到最终的预测姿态。
@@ -126,9 +126,9 @@ $\mathbf{P}_i$表示\textbf{PE}网络输出的连续预测姿势序列，$\mathb
 	\centering
 	\includegraphics[width=\linewidth]{2dto3d}
 	\caption[]{\label{fig:2dto3d}
-	2D图像到3D人体骨骼预测流程\cite{kanazawa2018end}。输入的2D图像$I$首先通过$\mathbf{Encoder}$。$\mathbf{Encoder}$输出的结果传送到迭代$\mathbf{3D regression}$模块（该模块能够推断人的隐式三维表达方式来减少人体关节投影的误差）。3D参数也被发送到$\mathbf{Discriminator}$，鉴别器（$\mathbf{Discriminator}$）$\mathbf{D}$的目的是告知这些参数是否来自真实的人体形状和姿势。
+	2D图像到3D人体骨骼预测流程\cite{kanazawa2018end}。
 	}
-\end{figure}
+\end{figure}输入的2D图像$I$首先通过$\mathbf{Encoder}$。$\mathbf{Encoder}$输出的结果传送到迭代$\mathbf{3D regression}$模块（该模块能够推断人的隐式三维表达方式来减少人体关节投影的误差）。3D参数也被发送到$\mathbf{Discriminator}$，鉴别器（$\mathbf{Discriminator}$）$\mathbf{D}$的目的是告知这些参数是否来自真实的人体形状和姿势。
 \subsection{姿态估计}{Posture Estimation}
 本次毕业论文着重于改进使用单目摄像机捕捉图像到3D人体骨骼姿态的估计结果\cite{kanazawa2018end}。由于这是一个典型的不适定问题，所以解决该问题时具有一定的挑战性。
 
@@ -161,3 +161,10 @@ $\mathbf{P}_i$表示\textbf{PE}网络输出的连续预测姿势序列，$\mathb
 
 
 在实际的应用中，对于每个人体几何信息进行采集几乎是不可能的，所以本文所涉及的工作中，仅使用由2D图像到3D骨骼预测流程中输出的$\mathbf{EE}$的3D位置和与其对应的根关节位置，并应用本文提出的IK解算器对当前身体骨骼连接做出一个最佳姿态的估计。
+
+\section{本章小结}{Summary}
+在本节中，将会完整阐述本文提出的基于监督学习方法的IK解算器。
+
+首次介绍了本文方法的完整流程，其次介绍了IK解算器的关键组件，包括MP、PE和去噪滤波器三个组件，并详细描述了了组件的网络结构和超参数等。
+
+最后，完整地介绍了本文涉及方法的两个应用-姿势合成和姿态估计，并对姿态估计的方法做了完整的阐述。
